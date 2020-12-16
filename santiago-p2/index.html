@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Journal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" text="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Journal</h1>
+    </header>
+    <h4>Please fill out the bottom form to keep track of what you eat throughout the day. </h4>
+    <form id="fform" method="GET">
+        <div>
+            <p><label for="name">User Name:</label></p>
+            <input type="text" id="name"><br>
+        </div>
+        <div>
+            <p><label for="date">Entry Date:</label></p>
+            <input type="date" id="date">
+        </div>
+        <div>
+            <p><label for="time">Time:</label></p>
+            <input type="time" id="time">
+        </div>
+        <div>
+            <p><label for="afood">Food Name:</label></p>
+            <input type="text" id="afood">
+        </div>
+        <div>
+            <p><label for="number">Number of <br> Servings:</label></p>
+            <input type="text" id="number">
+        </div>
+        <div>
+            <p><label for="serving">Serving Size:</label></p>
+            <input type="text" id="serving">
+        </div>
+        <div>
+            <p><label for="calories">Calories:</label></p>
+            <input type="text" id="calories">
+        </div>
+        </div>
+        <br><br>
+        <button type="submit" class="button-save">Add Food Entry </button>
+    </form>
+    <br>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Entry Date</th>
+                <th>Time</th>
+                <th>Food Name</th>
+                <th>Num of Servings</th>
+                <th>Serving Size</th>
+                <th>Calories</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="foodTable"></tbody>
+    </table>
+    </section>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
